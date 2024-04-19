@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assents/css/style.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="assents/css/styleheader.css">
+    <title>Site do Gabriel</title>
+    <link rel="icon" href="./imagens/logocasaporto.png" type="image/png" />
+    <script src="script/script.js" defer></script>
+    <script src="splide/splide.min.js"></script>
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headercontent">
+        <a href="" class="logo"><img src="imagens/branco_logo_casaporto.png" title="CasaPorto Inicio"></a>
+        <input class="mobile-btn" type="checkbox" id="mobile-btn"/>
+        <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+        <ul class="nav">
+          <li><a href="index.html" title="Home">A Casa Porto</a></li>
+            <li><a href="catalogo.html" title="Catalogo">Catálogo</a></li>
+            <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+            <li><a href="contato.html" title="Contato">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+              type   : 'loop',
+              autoplay: 'play',
+              interval: '1800',
+              perPage: 3,
+              focus  : 'center',
+              fixedWidth: '15rem',
+              height: '13rem',
+              gap: "6rem"
+            });
+        splide.mount();
+      } );
+    </script>
+    <section class="corpo">
+      <div class="container-slider">
+        <button id="prev-button">
+          <img src="imagens/arrow.png" alt="prev-button" />
+        </button>
+        <div class="container-images">
+          <div class="slider on">
+            <img src="imagens/imgsobrecarrossel.png" alt="movel" />
+            <a href="index.html" title="index"><button class="botaoslider">Sobre nós</button></a>
+          </div>
+          <div class="slider">
+            <img src="imagens/imagemcarroselgaleria.png" alt="movel" />
+            <a href="galeria.html" title="galeria"
+              ><button class="botaoslider">Galeria</button></a
+            >
+          </div>
+          <div class="slider">
+            <img src="imagens/imgcatalogo.jpg" alt="movel" />
+            <a href="catalogo.html" title="catalogo"
+              ><button class="botaoslider">Catalogo</button></a>
+          </div>
+          <div class="slider" title="contato">
+            <img src="imagens/imgpersonalizeseumovel.jpg" alt="movel" />
+            <a href="contato.html" title="contato"><button class="botaoslider">Fale conosco</button></a>
+          </div>
+        </div>
+        <button id="next-button">
+          <img src="imagens/arrow.png" alt="next-button" />
+        </button>
+      </div>
+      <section class="splide" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">PRODUTOS MAIS VISTOS</h2><br>
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                  <img src="imagens/produtos/Banco_Teluk.png"/><br>
+                  <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="imagens/produtos/Mesa_de_centro_Tonnarella.png"/>
+                    <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="imagens/produtos/Mesa_Malaita.png" />
+                    <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="imagens/produtos/Mesa_Mallorca_Pequena.png" />
+                    <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="imagens/produtos/Mesa_Maya.png" />
+                    <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="imagens/produtos/Mesa_Trancoso.png"/>
+                    <button class="btnOrc">SOLICITAR ORÇAMENTO</button>
+                  </li>
+              </ul>
+        </div>
+      </section>
+    </section>
+    <div class="sobrecasaporto">
+      <div class="casaporto">
+        <br><h1>Sobre a Casa Porto</h1><br>
+        <p>
+          Nosso principal objetivo é criar peças únicas nas quais o design,
+          a funcionalidade e durabilidade fazem parte do mesmo conceito de
+          qualidade, acreditamos que os móveis podem ser mais do que apenas um pedaço
+          de madeira ou metal, e é por isso que projetamos nos móveis nossa
+          personalidade e identidade.<br>
+          Seu design, construção e ornamentação são acompanhados por uma equipe
+          de profissionais
+          que trabalham sempre buscando o mais alto padrão de qualidade em todas
+          as áreas
+          para entregar uma experiência de qualidade aos nossos clientes.
+        </p><br>
+      </div>
+    </div>
+    <footer class="rodapé">
+      <div class="maps">
+        <br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.4791350254762!2d-45.01161933047766!3d-22.6569001611049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cccab868c56bd7%3A0xd806b5e4997fddec!2sR.%20Artur%20Pinto%2C%20Cachoeira%20Paulista%20-%20SP%2C%2012630-000!5e0!3m2!1spt-BR!2sbr!4v1696073142319!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="10%"
+          style="border: 1px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="colcontato">
+        <div>
+          <h1 class="contato">Contato</h1>
+          <p class="contato">
+            <img class="instalogo" src="imagens/logozap.png" />(12)997130000
+          </p>
+          <p class="contato">
+            <img class="instalogo" src="imagens/instalogo.png" alt="insta" /><a
+              href="www.instagram.com/casaportomoveis/"
+              target="_blank"
+              style="color: white"
+              >@casaportomoveis</a
+            >
+          </p>
+        </div>
+        <div>
+          <h1 class="endereco">Endereço</h1>
+          <p class="endereco">
+            Av Sarah Kubtischek-457 <br />
+            Cachoeira Paulsita-SP
+          </p>
+        </div>
+      </div>
+      <div class="sobresite">
+        <p>
+          Desenvolvido por
+          <a
+            href="https://linkedin.com/in/gabriel-pessoli-499621269/"
+            target="_blank"
+            style="color: white; text-decoration: underline"
+            >Gabriel</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
